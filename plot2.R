@@ -15,6 +15,8 @@ if (!exists("householdPowerConsumptionData")) {
 
 # build the graph 
 frame()
+par(mfrow = c(1,1))
+
 plot(type = "o", pch = 20, cex = 0, householdPowerConsumptionData$DateTime, householdPowerConsumptionData$Global_active_power, xlab="",ylab="Global Active Power (kilowatts)")
 dev.copy(png,file="plot2.png",width=480,height=480)
 dev.off()

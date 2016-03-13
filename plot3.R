@@ -15,6 +15,7 @@ if (!exists("householdPowerConsumptionData")) {
 
 # build the graph 
 frame()
+par(mfrow = c(1,1))
 
 #submetering 1 plot
 plot(type = "o", pch = 20, cex = 0, col = "black", householdPowerConsumptionData$DateTime, householdPowerConsumptionData$Sub_metering_1, xlab = "", ylab = "")
